@@ -512,10 +512,8 @@ body {
   }
 }
 @media screen and (max-width:768px){
-  /* .navbar{
-    z-index: 999;
-  } */
   .navbar .nav-links{
+      z-index: 999; 
       position: absolute;
       top: 12vh;
       right: 0;
