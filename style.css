@@ -552,6 +552,20 @@ body {
   .navbar .burger:hover{
       color: var(--c-brand-dark);
   }
+  .hero {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .hero .hero-text {
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 96%;
+  }
+  .hero .hero-text .countdown {
+    width: 100%;
+  }
   .faq-section .faq-question {
     font-size: 16px;
   }
