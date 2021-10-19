@@ -156,7 +156,7 @@ body {
 /* Feature Section CSS  */
 .feature {
   background: var(--c-brand-light);
-  height: 100vh;
+  height: 100%;
   width: 300%;
   display: flex;
   flex-wrap: nowrap;
@@ -264,6 +264,7 @@ body {
   justify-content: center;
   margin-top: 20px;
   min-height: 72vh;
+  padding-bottom: 40px;
 }
 .faq-section .faq-container .faq-holder {
   width: 50%;
@@ -331,7 +332,6 @@ body {
   background: var(--c-brand-dark);
   height: 72vh;
   padding: 0 160px;
-  margin-top: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -345,7 +345,7 @@ body {
   justify-content: space-between;
 }
 .contact-section .contact-company {
-  height: 50%;
+  height: 60%;
   width: 40%;
   display: flex;
   flex-direction: column;
@@ -378,7 +378,7 @@ body {
 }
 .contact-section .contact-about {
   margin-top: 20px;
-  height: 50%;
+  height: 60%;
   width: 40%;
   display: flex;
   flex-direction: column;
@@ -398,7 +398,7 @@ body {
 }
 .contact-section .contact-resources {
   margin-top: 20px;
-  height: 50%;
+  height: 60%;
   width: 40%;
   display: flex;
   flex-direction: column;
@@ -417,7 +417,7 @@ body {
   margin-bottom: 10px;
 }
 .contact-section .contact-details {
-  height: 50%;
+  height: 60%;
   width: 40%;
   display: flex;
   margin-top: 20px;
@@ -441,7 +441,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 36%;
+  /* height: 36%; */
   font-size: 18px;
   color: var(--c-brand-light);
 }
@@ -581,6 +581,58 @@ body {
   .faq-section .faq-container .faq-holder{
     width: 90%;
   }
+
+  .contact-section .contact-company .logo {
+    font-weight: 600;
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+  .contact-section .contact-company .socials h3 {
+    font-size: 18px;
+    color: var(--c-brand-light);
+    margin-bottom: 16px;
+    font-weight: 500;
+  }
+
+  .contact-section .contact-company .socials i {
+    color: var(--c-brand-light);
+    font-size: 20px;
+  }
+  .contact-section .contact-about{
+    margin-top: 0;
+  }
+  .contact-section .contact-about h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .contact-section .contact-about .about {
+    font-size: 16px;
+  }
+  .contact-section .contact-resources{
+    margin-top: 0;
+  }
+  .contact-section .contact-resources h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+
+  }
+  .contact-section .contact-resources .resource {
+    font-size: 16px;
+  }
+  .contact-section .contact-details{
+    margin-top: 0;
+  }
+  .contact-section .contact-details h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+
+  }
+  .contact-section .contact-details .detail {
+    font-size: 16px;
+  }
+  .contact-section .contact-copyright {
+    font-size: 16px;
+  }
 }
 @media screen and (max-width:600px){
   .feature .feature-holder {
@@ -614,6 +666,12 @@ body {
   .feature .feature-holder .feature-image img{
     width: 240px;
   }
+  .contact-section .contact-holder{
+  flex-wrap: wrap;
+  }
+  .contact-section .contact-holder{
+    height: 72%;
+  }
 }
 @media screen and (max-width : 480px) {
   .hero .hero-text h1 {
@@ -630,5 +688,54 @@ body {
   }
   .countdown .timer {
     margin: 0 6px;
+  }
+  .faq-section .faq-container .faq-holder{
+    width: 100%;
+  }
+  .contact-section .contact-company .logo {
+    font-size: 18px;
+  }
+  .contact-section .contact-company .socials h3 {
+    font-size: 16px;
+    color: var(--c-brand-light);
+    margin-bottom: 16px;
+    font-weight: 500;
+  }
+
+  .contact-section .contact-company .socials i {
+    color: var(--c-brand-light);
+    font-size: 16px;
+  }
+  .contact-section .contact-about{
+    margin-top: 0;
+  }
+  .contact-section .contact-about h3 {
+    font-size: 16px;
+  }
+  .contact-section .contact-about .about {
+    font-size: 12px;
+  }
+  .contact-section .contact-resources{
+    margin-top: 0;
+  }
+  .contact-section .contact-resources h3 {
+    font-size: 16px;
+
+  }
+  .contact-section .contact-resources .resource {
+    font-size: 12px;
+  }
+  .contact-section .contact-details{
+    margin-top: 0;
+  }
+  .contact-section .contact-details h3 {
+    font-size: 16px;
+
+  }
+  .contact-section .contact-details .detail {
+    font-size: 12px;
+  }
+  .contact-section .contact-copyright {
+    font-size: 12px;
   }
 }
