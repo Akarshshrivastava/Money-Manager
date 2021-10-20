@@ -14,7 +14,7 @@
 }
 body {
   font-family: "Open Sans", sans-serif;
-  overflow-x: hidden ;
+  overflow-x: hidden !important;
   overflow-y: scroll;
   min-height: 100vh;
 }
@@ -229,9 +229,10 @@ body {
   color: var(--c-brand);
 }
 .feature .feature-holder .feature-text .feature-card .feature-desc {
-  font-size: 21px;
-  text-align: center;
-  line-height: 32px;
+  font-size: 20px;
+  text-align: justify;
+  line-height: 28px;
+  width: 80%;
 }
 /* FAQ Section CSS  */
 .faq-section {
@@ -301,7 +302,7 @@ body {
   position: relative;
   cursor: pointer;
   justify-content: space-between;
-  font-size: 20px;
+  font-size: 19px;
 }
 .faq-section .faq-question::after {
   content: "\002B";
@@ -669,6 +670,26 @@ body {
   }
 }
 @media screen and (max-width : 480px) {
+  .hero {
+    height: 92vh;
+    padding: 0 20px;
+  }
+  .navbar {
+    height: 8vh;
+    padding: 20px 20px;
+  }
+  .navbar .logo {
+    font-size: 22px;
+  }
+  .navbar .burger{
+    font-size: 20px;
+}
+.navbar .nav-links{
+  /* display: none; */
+    top: 8vh;
+    height: 92vh;
+    /* Out of the screen  */
+}
   .hero .hero-image{
     width: 80%;
   }
@@ -686,6 +707,15 @@ body {
   }
   .countdown .timer {
     margin: 0 6px;
+  }
+  .feature .feature-holder {
+    padding: 0 20px;
+  }
+  .faq-section {
+    padding: 56px 20px 0 20px;
+  }
+  .contact-section {
+    padding: 0 20px;
   }
   .faq-section .faq-title h2{
     font-size: 32px;
