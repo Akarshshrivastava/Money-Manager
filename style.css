@@ -230,7 +230,7 @@ body {
 }
 .feature .feature-holder .feature-text .feature-card .feature-desc {
   font-size: 20px;
-  text-align: justify;
+  text-align: center;
   line-height: 28px;
   width: 80%;
 }
@@ -693,6 +693,10 @@ body {
   .hero .hero-image{
     width: 80%;
   }
+  .hero .hero-text{
+    width: 100%;
+    justify-content: space-around;
+  }
   .hero .hero-text h1 {
     font-size: 24px;
   }
@@ -701,12 +705,24 @@ body {
     font-size: 16px;
     margin-bottom: 0;
   }
+  .hero .hero-text .title {
+    margin-bottom: 0;
+  }
   .hero .hero-text .countdown {
     margin: 16px 0;
     flex-wrap:nowrap;
   }
   .countdown .timer {
     margin: 0 6px;
+    width: 60px;
+    height: 64px;
+  }
+  .countdown > .timer .timer-value {
+    font-size: 20px;
+  }
+  
+  .countdown > .timer .timer-title {
+    font-size: 12px;
   }
   .feature .feature-holder {
     padding: 0 20px;
@@ -727,10 +743,10 @@ body {
     width: 100%;
   }
   .faq-section .faq-question {
-    font-size: 14px;
+    font-size: 16px;
   }
   .faq-section .faq-answer{
-    font-size: 12px;
+    font-size: 16px;
   }
   .faq-section .faq-question::after {
     position: absolute;
@@ -755,7 +771,7 @@ body {
     font-size: 16px;
   }
   .contact-section .contact-about .about {
-    font-size: 12px;
+    font-size: 15px;
   }
   .contact-section .contact-resources{
     margin-top: 0;
@@ -764,7 +780,7 @@ body {
     font-size: 16px;
   }
   .contact-section .contact-resources .resource {
-    font-size: 12px;
+    font-size: 15px;
   }
   .contact-section .contact-details{
     margin-top: 0;
@@ -774,9 +790,10 @@ body {
 
   }
   .contact-section .contact-details .detail {
-    font-size: 12px;
+    font-size: 15px;
   }
   .contact-section .contact-copyright {
-    font-size: 12px;
+    font-size: 14px;
+    text-align: center;
   }
 }
