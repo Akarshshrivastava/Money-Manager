@@ -16,7 +16,7 @@ body {
   font-family: "Open Sans", sans-serif;
   overflow-x: hidden !important;
   overflow-y: scroll;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 /* a {
   color: inherit;
@@ -40,7 +40,7 @@ body {
   font-size: 26px;
   color: var(--c-brand);
 }
-.navbar .burger{
+.navbar .burger {
   display: none;
 }
 .navbar .logo a {
@@ -169,7 +169,7 @@ body {
   width: 100vw;
   padding: 0 160px;
 }
-.feature .feature-holder#feature-mid{
+.feature .feature-holder#feature-mid {
   flex-direction: row-reverse !important;
   background: var(--c-brand-dark);
   color: var(--c-brand-light);
@@ -219,10 +219,19 @@ body {
 .feature .feature-holder#feature-mid .feature-text .feature-card .feature-icon {
   color: var(--c-brand-light);
 }
-.feature .feature-holder#feature-mid .feature-text .feature-card .feature-title {
+.feature
+  .feature-holder#feature-mid
+  .feature-text
+  .feature-card
+  .feature-title {
   color: var(--c-brand-light);
 }
-.feature .feature-holder#feature-mid .feature-text .feature-card .feature-title span {
+.feature
+  .feature-holder#feature-mid
+  .feature-text
+  .feature-card
+  .feature-title
+  span {
   color: var(--c-brand-light);
 }
 .feature .feature-holder .feature-text .feature-card .feature-title span {
@@ -445,7 +454,7 @@ body {
   font-size: 18px;
   color: var(--c-brand-light);
 }
-@media screen and (max-width : 1024px) {
+@media screen and (max-width: 1024px) {
   .navbar {
     padding: 40px 40px;
   }
@@ -468,7 +477,7 @@ body {
     color: var(--c-brand);
     font-size: 20px;
   }
-  
+
   .countdown > .timer .timer-title {
     margin-top: 8px;
     font-size: 14px;
@@ -483,7 +492,7 @@ body {
     padding: 0 40px;
   }
 }
-@media screen and (max-width : 992px){
+@media screen and (max-width: 992px) {
   .feature {
     height: 300vh;
     width: 100%;
@@ -510,51 +519,54 @@ body {
     right: 0.6rem;
   }
 }
-@media screen and (max-width:768px){
-  .navbar .nav-links{
-    /* display: none; */
-      z-index: 999; 
-      position: absolute;
-      top: 12vh;
-      right: 0;
-      background-color: var(--c-brand-dark);
-      width: 100%;
-      height: 88vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transition: all 200ms ease-in-out;
-      transform: translateX(100%);
-      /* Out of the screen  */
+@media screen and (max-width: 768px) {
+  .navbar .nav-links {
+    display: none;
+    z-index: 999;
+    position: absolute;
+    top: 12vh;
+    right: 0;
+    background-color: var(--c-brand-dark);
+    width: 100%;
+    height: 88vh;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    transition: all 200ms ease-in-out;
+    transform: translateX(100%);
+    /* Out of the screen  */
   }
   .navbar.open .nav-links {
-    /* display: flex; */
-      transform: translateX(0%);
+    display: flex;
+    transform: translateX(0%);
   }
-  .navbar .nav-links ul{
-      display: flex;
-      flex-direction: column;
-      height: 40vh;
-      color: var(--c-brand-light);
+  .navbar .nav-links ul {
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    color: var(--c-brand-light);
   }
   .navbar .nav-links ul button {
     color: var(--c-brand);
     background: var(--c-light);
   }
-  .navbar .burger{
-      display: block;
-      cursor: pointer;
-      font-size: 22px;
-      transition: all 200ms ease-in-out;
+  .navbar .burger {
+    display: block;
+    cursor: pointer;
+    font-size: 22px;
+    transition: all 200ms ease-in-out;
   }
-  .navbar.open .burger{
+  .navbar.open .burger {
     transform: rotateZ(90deg);
   }
-  .navbar .burger:hover{
-      color: var(--c-brand-dark);
+  .navbar .burger:hover {
+    color: var(--c-brand-dark);
   }
   .hero {
     flex-direction: column-reverse;
+  }
+  .hero .hero-image {
+    width: 40%;
   }
   .hero .hero-text {
     text-align: center;
@@ -576,7 +588,7 @@ body {
     /* margin-top: 20px;
     min-height: 72vh; */
   }
-  .faq-section .faq-container .faq-holder{
+  .faq-section .faq-container .faq-holder {
     width: 90%;
   }
 
@@ -594,7 +606,7 @@ body {
   .contact-section .contact-company .socials i {
     font-size: 20px;
   }
-  .contact-section .contact-about{
+  .contact-section .contact-about {
     margin-top: 0;
   }
   .contact-section .contact-about h3 {
@@ -604,24 +616,22 @@ body {
   .contact-section .contact-about .about {
     font-size: 16px;
   }
-  .contact-section .contact-resources{
+  .contact-section .contact-resources {
     margin-top: 0;
   }
   .contact-section .contact-resources h3 {
     font-size: 20px;
     margin-bottom: 10px;
-
   }
   .contact-section .contact-resources .resource {
     font-size: 16px;
   }
-  .contact-section .contact-details{
+  .contact-section .contact-details {
     margin-top: 0;
   }
   .contact-section .contact-details h3 {
     font-size: 20px;
     margin-bottom: 10px;
-
   }
   .contact-section .contact-details .detail {
     font-size: 16px;
@@ -630,13 +640,13 @@ body {
     font-size: 16px;
   }
 }
-@media screen and (max-width:600px){
+@media screen and (max-width: 600px) {
   .feature .feature-holder {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
   }
-  .feature .feature-holder#feature-mid{
+  .feature .feature-holder#feature-mid {
     flex-direction: column-reverse !important;
   }
   .feature .feature-holder .feature-text {
@@ -656,20 +666,20 @@ body {
     text-align: center;
     line-height: 32px;
   }
-  .feature .feature-holder .feature-image{
+  .feature .feature-holder .feature-image {
     justify-content: center;
   }
-  .feature .feature-holder .feature-image img{
+  .feature .feature-holder .feature-image img {
     width: 240px;
   }
-  .contact-section .contact-holder{
-  flex-wrap: wrap;
+  .contact-section .contact-holder {
+    flex-wrap: wrap;
   }
-  .contact-section .contact-holder{
+  .contact-section .contact-holder {
     height: 72%;
   }
 }
-@media screen and (max-width : 480px) {
+@media screen and (max-width: 480px) {
   .hero {
     height: 92vh;
     padding: 0 20px;
@@ -681,19 +691,19 @@ body {
   .navbar .logo {
     font-size: 22px;
   }
-  .navbar .burger{
+  .navbar .burger {
     font-size: 20px;
-}
-.navbar .nav-links{
-  /* display: none; */
+  }
+  .navbar .nav-links {
+    /* display: none; */
     top: 8vh;
     height: 92vh;
     /* Out of the screen  */
-}
-  .hero .hero-image{
+  }
+  .hero .hero-image {
     width: 80%;
   }
-  .hero .hero-text{
+  .hero .hero-text {
     width: 100%;
     justify-content: space-around;
   }
@@ -710,7 +720,7 @@ body {
   }
   .hero .hero-text .countdown {
     margin: 16px 0;
-    flex-wrap:nowrap;
+    flex-wrap: nowrap;
   }
   .countdown .timer {
     margin: 0 6px;
@@ -720,32 +730,43 @@ body {
   .countdown > .timer .timer-value {
     font-size: 20px;
   }
-  
+
   .countdown > .timer .timer-title {
     font-size: 12px;
   }
   .feature .feature-holder {
     padding: 0 20px;
   }
+  .feature .feature-holder .feature-text .feature-card .feature-icon {
+    font-size: 24px;
+  }
+  .feature .feature-holder .feature-text .feature-card .feature-title {
+    font-size: 20px;
+  }
+  .feature .feature-holder .feature-text .feature-card .feature-desc {
+    font-size: 16px;
+    width: 82%;
+  }
   .faq-section {
     padding: 56px 20px 0 20px;
   }
+
   .contact-section {
     padding: 0 20px;
   }
-  .faq-section .faq-title h2{
+  .faq-section .faq-title h2 {
     font-size: 32px;
   }
-  .faq-section .faq-title p{
+  .faq-section .faq-title p {
     font-size: 18px;
   }
-  .faq-section .faq-container .faq-holder{
+  .faq-section .faq-container .faq-holder {
     width: 100%;
   }
   .faq-section .faq-question {
     font-size: 16px;
   }
-  .faq-section .faq-answer{
+  .faq-section .faq-answer {
     font-size: 16px;
   }
   .faq-section .faq-question::after {
@@ -764,7 +785,7 @@ body {
   .contact-section .contact-company .socials i {
     font-size: 16px;
   }
-  .contact-section .contact-about{
+  .contact-section .contact-about {
     margin-top: 0;
   }
   .contact-section .contact-about h3 {
@@ -773,7 +794,7 @@ body {
   .contact-section .contact-about .about {
     font-size: 15px;
   }
-  .contact-section .contact-resources{
+  .contact-section .contact-resources {
     margin-top: 0;
   }
   .contact-section .contact-resources h3 {
@@ -782,12 +803,11 @@ body {
   .contact-section .contact-resources .resource {
     font-size: 15px;
   }
-  .contact-section .contact-details{
+  .contact-section .contact-details {
     margin-top: 0;
   }
   .contact-section .contact-details h3 {
     font-size: 16px;
-
   }
   .contact-section .contact-details .detail {
     font-size: 15px;
