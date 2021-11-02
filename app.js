@@ -1,6 +1,6 @@
 // Countdown Timer
 const countdown = () => {
-  const countDate = new Date("October 30, 2021 00:00:00").getTime();
+  const countDate = new Date("July 30, 2022 00:00:00").getTime();
   const now = new Date().getTime();
   const timegap = countDate - now;
   // In milliseconds
